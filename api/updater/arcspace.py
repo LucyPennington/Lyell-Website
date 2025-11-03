@@ -7,7 +7,7 @@ from asnake.client import ASnakeClient
 
 url = 'https://aspaceapi.collections.ed.ac.uk'
 user = 'apiread'
-password = 'Auxilium1'
+password = 'K1X7QNOrkViWihRo'
 token = ''
 logger = logging.getLogger(__name__)
 
