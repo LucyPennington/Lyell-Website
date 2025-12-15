@@ -54,7 +54,7 @@ export default function About() {
                     supporters we were able to save the Sir Charles Lyell’s notebooks. We extend a warm and heartfelt
                     thank you to those who made it possible.</p>
                 <p>Thank you as well to all of our supporters who wish to remain anonymous. If your name does not appear
-                    and you would like it to, please contact <a href="mailto:david.mcclay@ed.ac.uk">David McClay</a>.</p>
+                    and you would like it to, please contact <a href="HeritageCollections@ed.ac.uk">Heritage Collections</a>.</p>
                 <p>The Roy Alexander Charitable Trust, Amateur Geological Society, Baldoukie Charitable Trust,
                     Blackbourn Geoconsulting, Cambridge Philosophical Society, Cambridge Society of Edinburgh, The Curry
                     Fund, Geologists' Association, History Of Earth Sciences Society, Edinburgh Geological Society,

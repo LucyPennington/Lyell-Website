@@ -5,6 +5,7 @@ import el_ft from "../images/Manual.jpg"
 import textContent from "../content/books.json"
 import links from "../content/booklinks.json"
 import vol from "../images/elements-full-colour.png"
+import bio from "../content/A Brief Bibliography of Charles Lyell.pdf";
 
 
 function BookInfo({textContent, image}) {
@@ -108,6 +109,16 @@ function Books() {
         border: '2px solid green'
     };
 
+    const handleDownload = () => {
+        const downloadUrl = bio;
+        const link = document.createElement('a');
+        link.href = downloadUrl;
+        link.download = '../content/A Brief Bibliography of Charles Lyell.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      };
+
     return (
         <div>
             <Top
@@ -143,17 +154,17 @@ function Books() {
                                    target="_blank">Reviews of Published Works | University of Edinburgh Archive and
                                 Manuscript Collections </a></li>
                             <li><a href="https://archives.collections.ed.ac.uk/repositories/2/archival_objects/21268"
-                                   target="_blank">Lectures on Geology, 1832-1833 | University of Edinburgh Archive and
+                                   target="_blank">Lectures on Geology, 1832-1846 | University of Edinburgh Archive and
                                 Manuscript Collections </a></li>
                             <li><a href="https://archives.collections.ed.ac.uk/repositories/2/archival_objects/199130"
-                                   target="_blank">Lectures on Geology, 1842-1853 | University of Edinburgh Archive and
+                                   target="_blank">Lectures on Geology, 1842-1861 | University of Edinburgh Archive and
                                 Manuscript Collections </a></li>
                         </ul>
                         <p>Stuart A. Baldwin (1930-2021) used his expertise as an antiquarian bookseller to compile
                             ‘Charles Lyell - a brief Bibliography’ in 2013. It provides a comprehensive guide to Lyell’s
-                            literary career, detailing the thirty three editions of his books issued up to 1911, all of
-                            the articles written by Lyell, biographies of Lyell, and articles and other content written
-                            on Lyell and his ideas.</p>
+                            literary career, detailing the 33 editions of his books issued up to 1911, articles written
+                            by Lyell, biographies of Lyell, and articles and other content written on Lyell and his
+                            ideas. <span onClick={handleDownload} style={{ textDecoration: 'underline', cursor: 'pointer', color: "blue" }}> Download here </span></p>
                     </div>
                     <div className="col order-lg-1 sidebar top-bar-green">
                         <div className="sidebar1-section">
